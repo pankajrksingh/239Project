@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="SmartSearch">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>239 Serach Engine Project</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+    
+    	<!--Angular JS-->
+	<script type="text/javascript" src="library/angular/angular.min.js"></script>
+
+	<!--Angular Route JS-->
+	<script type="text/javascript" src="library/angular-route/angular-route.min.js"></script>
+	
+		<!--jQuery JS-->
+	<script type="text/javascript" src="library/jquery/jquery-2.1.3.min.js"></script>
+
+	<!--Bootstrap JS-->
+	<script type="text/javascript" src="library/bootstrap/bootstrap.min.js"></script>
+
+	<!--Angular Bootstrap JS-->
+	<script type="text/javascript" src="library/angular-bootstrap/ui-bootstrap-tpls-0.12.1.min.js"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+    <script src="javascript/module.js"></script>
+
+	
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" ng-controller="Search">
+
+    <div class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="brand-heading">Smart Search</h2>
+                    </div>
+                </div>
+            </div>
+			<div class="row">
+			  <div class="col-lg-8 col-lg-offset-2">
+				<div class="input-group">
+				  <div ng-model="category" class="input-group-btn">
+					<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+					<ul class="dropdown-menu">
+					  <li><a href="#">Action</a></li>
+					  <li><a href="#">Another action</a></li>
+					  <li><a href="#">Something else here</a></li>
+					  <li role="separator" class="divider"></li>
+					  <li><a href="#">Separated link</a></li>
+					</ul>
+				  </div>
+					<input ng-model="searchquery" type="text" class="form-control" aria-label="..." placeholder="Search" >
+					<p ng-bind="hi"></p>
+					<span class="input-group-btn">
+						<button ng-click="sendQuery()" class="btn btn-primary" type="button">
+							<span class=" glyphicon glyphicon-search"></span>
+						</button>
+					</span>
+				</div>
+			  </div>
+			</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
